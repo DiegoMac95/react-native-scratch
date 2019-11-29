@@ -218,7 +218,7 @@
   UITouch *touch = [touches anyObject];
   path = [UIBezierPath bezierPath];
   path.lineWidth = brushSize;
-  
+  path.lineCapStyle = 1;
   CGPoint point = [touch locationInView:self];
   [path moveToPoint:point];
   [self drawImageStart];

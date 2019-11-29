@@ -3,7 +3,9 @@ package com.como.RNTScratchView;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.BitmapShader;
 import android.graphics.Canvas;
+import android.graphics.Shader;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -16,12 +18,12 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
-
+import android.graphics.drawable.Drawable;
+import com.como.RNTScratchView.R;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
-
 import java.io.InputStream;
 import java.net.URL;
 
@@ -72,10 +74,21 @@ public class ScratchView extends View implements View.OnTouchListener {
         imagePaint.setAntiAlias(true);
         imagePaint.setFilterBitmap(true);
 
+
         pathPaint.setAlpha(0);
         pathPaint.setStyle(Paint.Style.STROKE);
         pathPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         pathPaint.setAntiAlias(true);
+        pathPaint.setStrokeJoin(Paint.Join.ROUND); 
+        pathPaint.setStrokeCap(Paint.Cap.ROUND);  
+
+
+
+
+       /* Bitmap fillBMP = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.grunge);
+        fillBMP = Bitmap.createScaledBitmap(fillBMP, 20, 20, false);  
+        BitmapShader shader = new BitmapShader(fillBMP, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT);
+        pathPaint.setShader(shader);*/
 
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
     }

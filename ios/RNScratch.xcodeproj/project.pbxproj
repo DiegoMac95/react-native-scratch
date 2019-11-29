@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNScratch.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = sourcecode.make; path = libRNScratch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libRNScratch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNScratch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2946D6C922413E0A00BB98A4 /* RNTScratchViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTScratchViewManager.m; sourceTree = "<group>"; };
 		2946D6CA22413E0A00BB98A4 /* ScratchViewTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScratchViewTools.h; sourceTree = "<group>"; };
 		2946D6CB22413E0A00BB98A4 /* ScratchViewTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScratchViewTools.m; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
