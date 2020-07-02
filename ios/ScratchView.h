@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <RCTComponent.h>
+#import <React/RCTComponent.h>
 #import <React/RCTEventDispatcher.h>
 #import "ScratchViewDelegate.h"
 
